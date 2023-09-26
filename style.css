@@ -1,0 +1,70 @@
+
+:root {
+    --orange: #dc965a;
+    --lpink : #fae4d1;
+  }
+  .hero-section::before{
+    content: url(Assets/animation1.png);
+    position: absolute;
+    top: -120px;
+    left: -200px;
+    animation: mymove 10s infinite;
+  }
+  @media screen and (max-width: 768px) {
+    .hero-section::before {
+      top: -200px;
+      left: -250px;
+    }
+  }
+  .hero-section::after{
+    content: url(Assets/animation2.png);
+    position: absolute;
+    bottom: -120px;
+    right: -200px;
+    animation: mymove 10s infinite;
+  }
+  @media screen and (max-width: 768px) {
+    .hero-section::after {
+      bottom: -200px;
+      right: -250px;
+    }
+  }
+  
+  @keyframes mymove{
+    0% {
+  transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-40deg);
+    }
+    100%{
+      transform: rotate(0deg);
+    }
+  }
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(75, 53, 53, 0.52),
+        rgba(24, 11, 21, 0.73)
+      ),
+      url(Assets/asset\ 14.jpeg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .text-change::before {
+    content: "Web Developer";
+    animation: animate infinite 5s ease-in;
+    padding-left: 10px;
+  }
+  
+  @keyframes animate {
+    33% {
+      content: "App Developer";
+    }
+  
+    66% {
+      content: "UI/UX Designer";
+    }
+  }
+  
