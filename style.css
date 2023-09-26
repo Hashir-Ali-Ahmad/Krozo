@@ -70,4 +70,75 @@
   }
 
   /* CV Section */
+  .cv-sec {
+    height: 140vh;
+    position: relative;
+    background: white;
+  }
+  .cv-sec::after{
+    content: "";
+    background-color: var(--orange);
+    height: 100%;
+    position: absolute;
+    width: 40%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .cv-sec {
+      height: 240vh;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .cv-sec {
+      height: 200vh;
+    }
+  }
+  .cv-image {
+    border: 10px solid white;
+    position: relative;
+    z-index: 10;
+  }
+  .color-change {
+    color: var(--orange);
+  }
+  .txt-jus {
+    text-align: justify;
+  }
+  .cvbutton {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid rgb(252, 70, 100);
+    cursor: pointer;
+    position: relative;
+    background-color: var(--orange);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+  }
+  .cvbutton::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: translateX(100%);
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  .cvbutton:hover::before {
+    transform: translateX(0);
+  }
+  @media (max-width: 768px) {
+    .cv-sec::after {
+      display: none;
+    }
   
+  }  
