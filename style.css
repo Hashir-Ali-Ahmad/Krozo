@@ -3,6 +3,7 @@
     --orange: #dc965a;
     --lpink : #fae4d1;
   }
+  /* HERO Section */
   .hero-section::before{
     content: url(Assets/animation1.png);
     position: absolute;
@@ -67,4 +68,6 @@
       content: "UI/UX Designer";
     }
   }
+
+  /* CV Section */
   
