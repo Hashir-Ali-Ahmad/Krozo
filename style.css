@@ -241,3 +241,44 @@
   .card-product:hover h5{
     color: var(--orange);
   }
+
+  /* Carousel */
+  
+.caro-border{
+  border: 2px solid var(--orange) ;
+  }
+  .caro-img{
+  position: relative;
+  bottom: 7px;
+  left: 7px;
+  }
+  .caro-span {
+  border-radius: 25px;
+  }
+  
+  /* REcent Articels */
+
+  .articles{
+      background: var(--lpink);
+  }
+  .article-img{
+      transition: transform .2s;
+    }
+    .article-img:hover{
+      transform: scale(1.05);
+    }
+    .date-span{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    .art-body{
+      position: relative;
+      bottom: 50px;
+  right: 1px;
+    }
+    .art-body h6:hover,a:hover{
+      color: var(--orange) !important;
+      cursor: pointer;
+    }
+  
