@@ -71,7 +71,7 @@
 
   /* CV Section */
   .cv-sec {
-    height: 140vh;
+    height: 160vh;
     position: relative;
     background: white;
   }
@@ -84,16 +84,6 @@
     top: 0;
     left: 0;
     z-index: 0;
-  }
-  @media screen and (max-width: 768px) {
-    .cv-sec {
-      height: 240vh;
-    }
-  }
-  @media screen and (max-width: 425px) {
-    .cv-sec {
-      height: 200vh;
-    }
   }
   .cv-image {
     border: 10px solid white;
