@@ -180,3 +180,41 @@
     color: white;
     z-index: 3;
   }
+
+  /* Skills and Education */
+
+  .education{
+    background: var(--orange);
+  }
+  .skills{
+    background: #FFF5EC;
+  }
+  .round-span {
+    background: black;
+    padding: 2px 10px;
+    border-radius: 25px;
+  }
+  .round-span2 {
+    background: var(--orange);
+    padding: 2px 10px;
+    border-radius: 25px;
+  }
+  .top-dashed {
+    border-top: 1px dashed white;
+    padding-top: 30px;
+  }
+  .bar::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  
+    background: var(--orange);
+    width: 40px;
+    height: 5px;
+  }
+  
+  .progress-bar{
+    background: var(--orange) !important;
+    
+  }
