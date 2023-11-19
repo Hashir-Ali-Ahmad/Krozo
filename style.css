@@ -130,5 +130,53 @@
     .cv-sec::after {
       display: none;
     }
-  
   }  
+
+/* Service Section */
+
+  .serv-sec{
+    background: var(--lpink);
+  }
+  .underlineAfter {
+    position: relative;
+  }
+  .underlineAfter::after {
+    content: "";
+    position: absolute;
+    background: var(--orange);
+    width: 80px;
+    height: 5px;
+    bottom: 0;
+    left: 36%;
+    right: 0;
+  }
+  .service-card i {
+    color: #dc965a;
+    position: relative;
+  }
+  .serCardText{
+    z-index: 4;
+  }
+  .service-card::after {
+    content: "";
+    background-color: var(--orange);
+    height: 0%;
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+  .service-card:hover::after {
+    opacity: 1;
+    height: 100%;
+  } 
+  .service-card:hover i {
+    color: white;
+  }
+  .service-card:hover {
+    color: white;
+    z-index: 3;
+  }
