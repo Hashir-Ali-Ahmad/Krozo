@@ -218,3 +218,26 @@
     background: var(--orange) !important;
     
   }
+
+  /* My Portfolio */
+
+  .port-con{
+    background: var(--lpink);
+  }
+  .portfolio-nav li a:active,a:focus{
+    border-bottom: 2px solid var(--orange);
+  }
+  
+  .product-link{
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    display: none !important;
+  }
+  .card-product:hover .product-link{
+    display: block !important;
+    color: #dc965a;
+  }
+  .card-product:hover h5{
+    color: var(--orange);
+  }
